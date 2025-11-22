@@ -45,6 +45,99 @@ img {
     border-radius: 3rem;
 }
 
+.container .sobre-mim{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    padding: 5rem;
+    width: 100%;
+    justify-content: center;
+    background-color: var(--cor-cinza-clara);
+   border-radius: 2rem;
+     
+}
+
+
+.container .sobre-mim .introducao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+   
+
+}
+
+.container .sobre-mim h2{
+    color: var(--cor-neutra-escura);
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+.container .sobre-mim p{
+    color: var(--cor-neutra-escura);
+    font-size: 1.2rem;
+    text-align: center;
+    max-width: 600px;
+}
+
+.container .sobre-mim img{
+    width: 250px;
+    height: 250px;
+    border-radius: 10rem;
+}
+
+.container .sobre-mim .redes-sociais{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.container .sobre-mim .redes-sociais a{
+    color: var(--cor-primaria);
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: transform 0.2s ease, color 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .sobre-mim .redes-sociais a:hover{
+    transform: scale(1.1);
+    color: var(--cor-primaria-clara);
+}
+
+.container .sobre-mim .guias{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    
+    
+}
+.container .sobre-mim .guias a{
+    background-color: var(--cor-primaria);
+    color: var(--cor-primaria-clara);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;        
+    font-weight: 600;
+    border-radius: 5rem;
+    transition: background-color 0.18s ease, color 0.18s ease, transform 0.12s ease;
+    display: inline-block;
+}
+
+
+.container .sobre-mim .guias a:hover{
+    background-color: var(--cor-neutra-escura);
+    color: var(--cor-neutra-clara);          
+    transform: translateY(-2px);
+}
+
 .container {
     background-color: var(--cor-neutra-clara);
     display: flex;
@@ -64,6 +157,15 @@ img {
     width: 100%;
 }
 
+.container p{
+    color: var(--cor-neutra-escura);
+    font-size: 1.2rem;
+    text-align: center;
+    width: 100%;
+}
+
+
+
 .container-items{
     display: flex;
     flex-wrap: wrap;
@@ -81,6 +183,9 @@ img {
     padding: 1rem;
     border-radius: 1rem;
 }
+.container .item:hover{
+    background-color: var(--cor-primaria);
+}
 
 .container .item h1{
     color: var(--cor-primaria-clara);
@@ -95,6 +200,96 @@ img {
     text-align: center;
     margin-top: 0.5rem;
 }
+
+.container-items a{
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.container-items a:hover{
+    transition: all 0.3s ease-in-out;
+}
+
+.container .habilidades{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    border-top: 1px solid var(--cor-neutra-escura);
+}
+
+.container .habilidades h2{
+    width: 100%;
+    text-align: center;
+    color: var(--cor-neutra-escura);
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.container .habilidades .habilidade{
+    background-color: var(--cor-marrom-escura);
+    color: var(--cor-primaria-clara);
+    padding: 2rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: center;
+    min-width: 300px;
+    min-height: 300px;
+    border-radius: 2rem;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.container .habilidades .habilidade:hover{
+    background-color: var(--cor-primaria);
+    transform: translateY(-5px);
+}
+.container .experiencias{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    padding: 5rem;
+    border-top: 1px solid var(--cor-neutra-escura);
+    
+}
+.container .experiencias h2{
+    width: 100%;
+    text-align: center;
+    color: var(--cor-neutra-escura);
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+.container .experiencias .experiencia{
+    background-color: var(--cor-marrom-escura);
+    color: var(--cor-primaria-clara);
+    padding: 2rem;
+    min-height: 100px;
+    border-radius: 8rem;
+    transition: all 0.3s ease-in-out;
+    font-size: 1.3rem;
+    text-align: center;
+}
+.container .experiencias .experiencia:hover{
+    background-color: var(--cor-primaria);
+    transform: translateY(-5px);
+}
+
+
+.container .experiencias .experiencia:hover{
+    background-color: var(--cor-primaria);
+    transform: translateY(-5px);
+
+}
+
+
 
 footer{
     background-color: var(--cor-primaria);
