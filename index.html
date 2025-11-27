@@ -7,7 +7,9 @@
     <title>Biblioteca</title>
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/base.css">
+    <link rel="stylesheet" href="src/css/menu.css">
     <link rel="stylesheet" href="src/css/style.css">
+    
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,25 +21,22 @@
 </head>
 
 <body>
-    <header class="cabecalho">
-        <nav>
-            <img src="src/img/gato 5.jpeg" alt="icone">
-            <h1>Biblioteca</h1>
+     <header class="header">
+    <div class="logo">
+        <h1>Biblioteca Portfolio</h1>
+    </div>
 
-            <!-- <button class="hamburguer">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button> -->
+    <button class="menu-btn" id="menuButton">
+        <img src="src/img/gato 5.jpeg" alt="menu" id="menuIcon">
+    </button>
 
-            <ul class="menu">
-                <li><a href="#">Início</a></li>
-                <li><a href="projetos.html">Projetos</a></li>
-                <li><a href="livros.html">Livros</a></li>
-                <li><a href="certificados.html">Certificados</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="nav" id="menuNav">
+        <a href="index.html">Início</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="livros.html">Livros</a>
+        <a href="certificados.html">Certificados</a>
+    </nav>
+</header>
 
     <main>
 
@@ -173,7 +172,7 @@
 
     <footer class="rodape">
         <p>Biblioteca Julyana &copy; 2025</p>
-    </footer>
-</body>
-
+        <script src="src/js/script.js"></script>
+    </footer> 
+    </body>
 </html>

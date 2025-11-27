@@ -6,10 +6,32 @@
   outline: none;
 
 }   
+
+header {
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+    color: var(--cor-primaria-clara);
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+}
+
 body {
     font-family: 'Nunito', sans-serif;
     box-sizing: border-box;
-    background-color: var(--cor-neutra-clara);
+    background-color: var(--cor-almond);
     min-height: 100vh;
     grid-template-rows: auto;
     grid-template-areas: 
