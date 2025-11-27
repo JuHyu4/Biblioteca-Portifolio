@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=0, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biblioteca</title>
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/base.css">
@@ -65,9 +66,14 @@
         </section>
 
         <section class="container" id="habilidades">
-
-            <div class="habilidades">
-                <h2>Habilidades</h2>
+            <h2 class="titulo-habilidades">Habilidades</h2>
+                <div class="habilidades-wrapper">
+                    <button class="seta left" id="prevSlide">
+                    <img src="src/img/gato 3.jpeg" alt="">
+                </button>
+           
+            <div class="habilidades-slider">
+            
                 <div class="habilidade">
                     <h3>Front-End</h3>
                     <ul>
@@ -95,18 +101,15 @@
                         <li>Comunicação Eficaz</li>
                     </ul>
                 </div>
-                <div>
-                    <div class="habilidade">
+                <div class="habilidade">
                         <h3>Idiomas</h3>    
                         <ul>
                             <li>Português - Nativo</li>
                             <li>Inglês - Intermediário</li>
                             <li>Español - Básico</li>
                         </ul>
-                    </div>
                 </div>
-                <div>
-                    <div class="habilidade">
+                <div class="habilidade">
                         <h3>Soft Skills</h3>    
                         <ul>
                             <li>Trabalho em Equipe</li>
@@ -114,10 +117,8 @@
                             <li>Adaptabilidade</li>
                             <li>Gestão do Tempo</li>
                         </ul>
-                    </div>
                 </div>
-                <div>
-                    <div class="habilidade">
+                <div class="habilidade">
                         <h3>Conhecimentos Adicionais</h3>    
                         <ul>
                             <li>Metodologias Ágeis (Scrum)</li>
@@ -125,9 +126,12 @@
                             <li>SEO Básico</li>
                             <li>Segurança da Informação</li>
                         </ul>
-                    </div>
                 </div>
             </div>
+            <button class="seta right" id="nextSlide">
+                    <img src="src/img/gato 4.jpeg" alt="">
+                </button>
+             </div>
         </section>
        
         <section class="container" id="experiencias">

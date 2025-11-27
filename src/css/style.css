@@ -103,11 +103,9 @@ img {
 .container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 2rem;
     padding: 5rem;
     margin-bottom: 2rem;
-    justify-content: space-between
 }
 
 .container h1{
@@ -125,92 +123,117 @@ img {
     width: 100%;
 }
 
+/* HABILIDADES */
 
 
-.container-items{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    width: 100%;
-}
 
-.container .item{
-    background-color: var(--cor-marrom-escura);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-    border-radius: 1rem;
-}
-.container .item:hover{
-    background-color: var(--cor-primaria);
-}
-
-.container .item h1{
-    color: var(--cor-vanilla);
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-top: 1rem;
-}
-
-.container .item p{
-    color: var(--cor-cream);
-    font-size: 1rem;
-    text-align: center;
-    margin-top: 0.5rem;
-}
-
-.container-items a{
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
-}
-
-.container-items a:hover{
-    transition: all 0.3s ease-in-out;
-}
-
-.container .habilidades{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 2rem;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    padding: 5rem;
-    border-top: 1px solid var(--cor-neutra-escura);
-}
-
-.container .habilidades h2{
+.container h2{
     width: 100%;
     text-align: center;
     color: var(--cor-expresso);
     font-size: 2rem;
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 }
 
-.container .habilidades .habilidade{
+.habilidades-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .habilidades-slider .habilidade{
     background-color: var(--cor-marrom-escura);
     color: var(--cor-cream);
-    padding: 2rem;
     border-radius: 1rem;
     font-size: 1.2rem;
     line-height: 1.8;
     text-align: center;
-    min-width: 300px;
-    min-height: 300px;
+    align-items: center;
+    min-width: 950px;
     border-radius: 2rem;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
 }
 
-.container .habilidades .habilidade:hover{
+.container .habilidades-slider .habilidade:hover{
     background-color: var(--cor-mocca);
     transform: translateY(-5px);
 }
+
+
+.habilidades-slider {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: auto;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+
+
+
+/* Setas */
+.seta {
+    background: none;
+    border: none;
+    color: var(--cor-expresso);
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.seta.left,
+.seta.right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.seta:hover {
+    color: var(--cor-primaria);
+}
+
+
+.seta.left {
+    position: absolute;
+    left: 20px;
+}
+
+.seta.right {
+    position: absolute;
+    right: 5%;
+}
+
+
+
+.seta img {
+    width: 60px;     
+    height: auto;
+    object-fit: cover;
+    border-radius: 3rem;  
+    transition: transform 0.3s ease;
+}
+
+.seta img:hover {
+    transform: scale(1.1);
+}
+
+/* Espaçamento do botão */
+.seta {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+
+/* EXPERIENCIAS */
 .container .experiencias{
     display: flex;
     flex-direction: column;
@@ -220,14 +243,7 @@ img {
     border-top: 1px solid var(--cor-expresso);
     
 }
-.container .experiencias h2{
-    width: 100%;
-    text-align: center;
-    color: var(--cor-expresso);
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 3rem;
-}
+
 .container .experiencias .experiencia{
     background-color: var(--cor-marrom-escura);
     color: var(--cor-cream);

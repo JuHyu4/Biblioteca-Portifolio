@@ -24,10 +24,6 @@ ul{
     list-style: none;
 }
 
-img{
-    max-width: 100%;
-}
-
 body {
     font-family: 'Nunito', sans-serif;
     box-sizing: border-box;
